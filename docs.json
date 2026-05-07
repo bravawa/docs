@@ -29,33 +29,8 @@
       ]
     },
     "directory": "card",
-    "tabs": [
-      {
-        "tab": "General",
-        "pages": [
-          "new-signup",
-          "test",
-          "untitled-page"
-        ]
-      },
-      {
-        "tab": "Central Fill Module",
-        "pages": [
-          {
-            "group": "Central Fill Pharmacies",
-            "pages": [
-              "central-fill-pharmacy",
-              "untitled-pagete"
-            ]
-          },
-          {
-            "group": "Dispensing Pharmacies",
-            "pages": [
-              "dispensing-pharmacies"
-            ]
-          }
-        ]
-      }
+    "pages": [
+      "index"
     ]
   },
   "logo": "https://pharmatools.ca/pharmatools-logo.svg",

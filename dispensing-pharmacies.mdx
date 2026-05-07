@@ -1,0 +1,159 @@
+---
+title: "Worfklow — Dispensing Pharmacy"
+description: "How to submit and track central fill orders from your dispensing pharmacy."
+---
+
+<Info>
+  This guide is for **dispensing pharmacies (senders)** — the pharmacy that receives the original prescription and sends it to a central fill pharmacy for compounding.
+</Info>
+
+## Navigating to Central Fill
+
+There are three ways to access the Central Fill module:
+
+<Columns cols={3}>
+  <Card title="Dashboard Widget" icon="panel-top">
+    The **Central Fill Status** panel on the right side of your Dashboard shows your most recent pending orders at a glance. Click **View All** to see the full list.
+  </Card>
+
+  <Card title="Side Navigation" icon="panel-left-close">
+    Click the **mortar and pestle icon** in the left sidebar to open the Compounding module. Expand **Central Fill** to access all sub-pages.
+  </Card>
+
+  <Card title="Top Bar" icon="panel-top-close">
+    The **Create Order** button is always visible in the top navigation bar, regardless of what page you are currently on.
+  </Card>
+</Columns>
+
+---
+
+## Creating an Order
+
+Navigate to **Compounding → Central Fill → Create An Order**, or click **Create Order** in the top bar.
+
+<Steps>
+  <Step title="Select Central Fill Pharmacy">
+    Choose the central fill pharmacy you are sending this order to from the dropdown.
+
+    <Note>
+      Only pharmacies you have an active connection with will appear here. If your intended pharmacy is missing, go to **Manage Connections** first.
+    </Note>
+  </Step>
+  <Step title="Enter Patient's Full Name">
+    Enter the patient's full legal name exactly as it appears on the prescription.
+  </Step>
+  <Step title="Upload Processed RX">
+    Attach a screenshot or export of the **mixture profile from your pharmacy management system (PPMS)**. This gives the central fill pharmacy the dispensing details they need to prepare the compound.
+  </Step>
+  <Step title="Select Refill Type">
+    This field is dynamic — your selection determines what additional fields appear.
+
+    <AccordionGroup>
+      <Accordion title="Yes — refill with unchanged quantity" icon="check">
+        No additional fields are required. You can proceed directly to the remaining fields and submit.
+      </Accordion>
+
+      <Accordion title="No — different quantity" icon="arrow-up-down">
+        An **Enter New Quantity Requested** field will appear. Enter the updated quantity. This will be flagged for the central fill pharmacy's attention.
+      </Accordion>
+
+      <Accordion title="No — new prescription" icon="x">
+        An **Upload Image of Original Prescription** field will appear. Attach a photo or scan of the original prescription received at your dispensing pharmacy.
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+  <Step title="LOT# (if applicable)">
+    If this order is tied to a specific lot number (e.g. a refill of a previously compounded batch), enter it here. Leave blank if not applicable.
+  </Step>
+  <Step title="Optional Notes">
+    Add any instructions or context outside the standard fields — for example, special handling requests, patient allergy flags, or urgency notes.
+  </Step>
+  <Step title="Sender's Initials">
+    Enter the initials of the staff member submitting this order. This is used for accountability and tracking purposes.
+  </Step>
+  <Step title="Submit">
+    Once all required fields are complete, click **Submit**. The order will appear in the central fill pharmacy's queue immediately.
+  </Step>
+</Steps>
+
+---
+
+## Tracking Your Orders
+
+### Active Orders
+
+Navigate to **Compounding → Central Fill → View Orders** to see all orders that are not yet archived.
+
+| Column | Description |
+| --- | --- |
+| **Date** | Date and time the order was submitted |
+| **Pharmacy** | The central fill pharmacy the order was sent to |
+| **Patient** | Patient's full name |
+| **Initials** | Staff member who submitted the order |
+| **Status** | Current order status (see below) |
+| **Actions** | Click **View** to open full order details |
+
+### Order Statuses
+
+<Columns cols={3}>
+  <Card title="Pending" type="warning" icon="clock">
+    The order has been submitted and is awaiting acknowledgement from the central fill pharmacy.
+  </Card>
+
+  <Card title="Received" type="note" icon="circle-check">
+    The central fill pharmacy has acknowledged the order and is actively working on it.
+  </Card>
+
+  <Card title="Completed" type="check" icon="badge-check">
+    The central fill pharmacy has marked the order as complete.
+  </Card>
+</Columns>
+
+### Viewing Order Details
+
+Click **View** on any order to open its detail page. You will see:
+
+- All the information you submitted at the time of the order
+- A **Receiver Details** section populated by the central fill pharmacy — this may include notes, modifications, or additional information they have added while processing the order
+
+### Past Orders
+
+<Info>
+  Orders are automatically moved to **View Past Orders** one day after their status changes to **Completed**. This keeps your active list focused on in-progress work while preserving a full history for reference and compliance.
+</Info>
+
+Navigate to **Compounding → Central Fill → View Past Orders** to access your archived order history.
+
+---
+
+## Managing Connections
+
+Before you can send an order, your pharmacy must be connected to the central fill pharmacy through PharmaTools.
+
+Navigate to **Compounding → Central Fill → Manage Connections** to view, add, or remove connections.
+
+<Warning>
+  If you need to establish a new connection, contact your central fill pharmacy and have them add you from their receiver settings, or reach out to PharmaTools support.
+</Warning>
+
+---
+
+## Quick Reference
+
+<Columns cols={2}>
+  <Card title="Create a new order" icon="file-plus" href="/central-fill/create-order">
+    Top bar → **Create Order**, or Compounding → Central Fill → **Create An Order**
+  </Card>
+
+  <Card title="Check pending orders" icon="list-check" href="/central-fill/view-orders">
+    Dashboard → Central Fill Status widget, or Compounding → Central Fill → **View Orders**
+  </Card>
+
+  <Card title="View archived orders" icon="archive" href="/central-fill/past-orders">
+    Compounding → Central Fill → **View Past Orders**
+  </Card>
+
+  <Card title="Add a connection" icon="link" href="/central-fill/manage-connections">
+    Compounding → Central Fill → **Manage Connections**
+  </Card>
+</Columns>

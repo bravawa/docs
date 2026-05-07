@@ -1,0 +1,75 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "PharmaTools Guide",
+  "description": "Step-by-step guides for every product—platform setup, analytics, and integrations in one place.",
+  "colors": {
+    "primary": "#166E3F",
+    "light": "#26BD6C",
+    "dark": "#166E3F"
+  },
+  "favicon": "https://pharmatools.ca/pharmatools-logo.svg",
+  "icons": {
+    "library": "lucide"
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "contextual": {
+    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
+  },
+  "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "API docs",
+          "icon": "scroll-text",
+          "href": "https://docs.pharmatools.ca"
+        }
+      ]
+    },
+    "directory": "card",
+    "tabs": [
+      {
+        "tab": "General",
+        "pages": [
+          "new-signup",
+          "test",
+          "untitled-page"
+        ]
+      },
+      {
+        "tab": "Central Fill Module",
+        "pages": [
+          {
+            "group": "Central Fill Pharmacies",
+            "pages": [
+              "central-fill-pharmacy",
+              "untitled-pagete"
+            ]
+          },
+          {
+            "group": "Dispensing Pharmacies",
+            "pages": [
+              "dispensing-pharmacies"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": "https://pharmatools.ca/pharmatools-logo.svg",
+  "navbar": {
+    "links": [],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://dashboard.mintlify.com"
+    }
+  },
+  "footer": {
+    "socials": {
+      "linkedin": "https://linkedin.com/company/yourcompany"
+    }
+  }
+}

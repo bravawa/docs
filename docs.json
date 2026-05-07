@@ -4,9 +4,9 @@
   "name": "PharmaTools Guide",
   "description": "Step-by-step guides for every product—platform setup, analytics, and integrations in one place.",
   "colors": {
-    "primary": "#166E3F",
-    "light": "#26BD6C",
-    "dark": "#166E3F"
+    "primary": "#192646",
+    "light": "#E9F2FC",
+    "dark": "#192646"
   },
   "favicon": "https://pharmatools.ca/pharmatools-logo.svg",
   "icons": {
@@ -29,9 +29,9 @@
       ]
     },
     "directory": "card",
-    "products": [
+    "dropdowns": [
       {
-        "product": "General",
+        "dropdown": "General",
         "pages": [
           "index",
           "getting-started-sign-up",
@@ -40,7 +40,7 @@
         ]
       },
       {
-        "product": "Central Fill Module",
+        "dropdown": "Central Fill Module",
         "pages": [
           "workflow-central-fill",
           "workflow-dispensing",
@@ -51,7 +51,12 @@
   },
   "logo": "https://pharmatools.ca/pharmatools-logo.svg",
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "href": "https://pharmatools.ca/main",
+        "label": "PharmaTools"
+      }
+    ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
@@ -61,6 +66,11 @@
   "footer": {
     "socials": {
       "linkedin": "https://linkedin.com/company/yourcompany"
+    }
+  },
+  "background": {
+    "color": {
+      "dark": "#192646"
     }
   }
 }

@@ -29,8 +29,24 @@
       ]
     },
     "directory": "card",
-    "pages": [
-      "index"
+    "products": [
+      {
+        "product": "General",
+        "pages": [
+          "index",
+          "getting-started-sign-up",
+          "getting-started-employees",
+          "manage-employees"
+        ]
+      },
+      {
+        "product": "Central Fill Module",
+        "pages": [
+          "workflow-central-fill",
+          "workflow-dispensing",
+          "manage-connections"
+        ]
+      }
     ]
   },
   "logo": "https://pharmatools.ca/pharmatools-logo.svg",

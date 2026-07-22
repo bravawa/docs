@@ -50,9 +50,9 @@
       {
         "dropdown": "Partner Portal",
         "pages": [
-          "fax-profiles",
           "starting-a-port",
-          "monitoring-a-port"
+          "monitoring-a-port",
+          "fax-profiles"
         ]
       }
     ]

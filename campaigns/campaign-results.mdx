@@ -1,0 +1,78 @@
+---
+title: "Campaign results"
+description: "See how many texts were delivered, who tapped your link, replied or opted out, and resend to the people it missed."
+icon: "chart-column"
+---
+
+Every campaign that has started sending has a results page. Open it by clicking the campaign in **Campaigns › All campaigns** (or **Sent**, **Sending**), or right-click the row and choose **View report**.
+
+While a campaign is still sending, the page refreshes itself every 10 seconds and the status pill moves from *Sending · 40%* to *Sent*. A scheduled campaign opens the same page with the note *This campaign hasn't started sending yet. Its numbers show up here once it does.*
+
+<Note>
+A draft has no results. Clicking a draft opens it in the editor instead.
+</Note>
+
+## The header
+
+Under the campaign name and status is one line saying when it went, which lists it went to, and the number it was sent from. The buttons on the right:
+
+| Button | What it does | Who |
+| --- | --- | --- |
+| **Export** | Downloads a CSV file with every recipient and how it went, including the times it was delivered, clicked, replied and opted out. | Managers and Admins |
+| **Resend to people who didn't get it (N)** | Opens **Resend this campaign?** See below. | Managers and Admins |
+| **Stop sending** | While it's sending: asks **Stop sending "…"?** Texts already sent can't be taken back; credits for the rest come back to you. | Managers and Admins |
+| **Cancel schedule** | While it's scheduled: turns it back into a draft. No credits are taken. | Managers and Admins |
+| **Duplicate** | Copies the campaign as a new draft. | Everyone |
+
+## How it went
+
+A row of cards shows each step, with a bar for its share of the people texted:
+
+| Card | What it counts |
+| --- | --- |
+| **Sent to** | Everyone the campaign was sent to. |
+| **Delivered** | Texts the carrier confirmed, with the percentage and how many were *not delivered*. |
+| **Clicked the link** | People who tapped their `{Booking link}` and *opened the booking page*. Shows only when the text had a booking link. |
+| **Replied** | People who texted back. Two-way texting only; replies are *in Communications*. |
+| **Opted out** | People who replied STOP or (outgoing only) used their opt-out link after this campaign. |
+
+## Recipients
+
+The **Recipients** table lists each person with **Person**, **Status**, **Detail** and **Time**. Use the tabs to filter: **All**, **Replied**, **Clicked**, **Not delivered** and **Opted out**, each with its count. Click **Show more** for the next page.
+
+| Status | Detail you may see |
+| --- | --- |
+| **Delivered** | — |
+| **Replied** | The start of their reply in quotes, or *Replied · see Communications*. |
+| **Clicked link** | *Opened booking page* |
+| **Not delivered** | *Landline*, *Number not in service*, *Carrier blocked* or *Carrier error* |
+| **Opted out** | *Replied STOP*, *Used opt-out link* or *Opted out by the pharmacy* |
+| **Waiting** | Still in the queue (while sending). |
+| **Left out** | *Opted out before their turn*, *Consent ended before their turn*, *Landline*, *Same number twice* or *Campaign stopped first* |
+
+## The side panel
+
+- **The text**: the message exactly as it went out, and what it cost: *N texts × $0.060*, **Sending from your own number** if used, **Back for texts that never left** (refunds), and **Taken from credits**. If the $6.00 minimum was charged, it says so.
+- **Latest replies** (two-way only): the newest replies. Click one to open that conversation in **Comms**, or click **Open in Communications** for all text conversations.
+- **Replies and clicks by hour** (or **Link clicks by hour** for outgoing only): a small bar chart of when people responded.
+- **Why N didn't get it**: failed texts by reason (**Landline — can't take texts**, **Number not in service**, **Carrier blocked it**, **Other carrier error**) and people left out before their turn (**Opted out before their turn**, **Consent ran out**, **Known landline**, **Stopped before sending**). Landlines found this way are marked so they're skipped next time.
+
+With outgoing-only texting, a note explains that the pharmacy doesn't get replies: people opt out with their own link, and the booking link is how you see who's interested.
+
+## Resend to the people it missed
+
+After a campaign has finished, a Manager or Admin can send it once more to the people whose text failed, other than landlines, and who can still be texted today.
+
+<Steps>
+  <Step title="Open the resend">
+    Click **Resend to people who didn't get it (N)**. The window works out the price first.
+  </Step>
+  <Step title="Check the price">
+    It asks, for example, *Resend to 13 people who didn't get it? $6.00 comes out of your credits (the $6.00 minimum applies).* A resend is priced like any campaign, so the minimum and the own-number fee apply again. If you're short, click **Buy credits**.
+  </Step>
+  <Step title="Resend">
+    Click **Resend**, or **Not now**. The resend is a new campaign named *… · resend*, and it sends right away, inside quiet hours.
+  </Step>
+</Steps>
+
+Once resent, the button becomes **See the resend**, and the resend's page links back with **See the original campaign**. When the button is grey, hover over it to see why: *Still sending*, *Already resent*, *This is already a resend*, *Stopped campaigns can't be resent*, *Everyone got it* or *Nobody to resend to*.

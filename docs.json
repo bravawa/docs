@@ -2,13 +2,13 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "almond",
   "name": "PharmaTools Guide",
-  "description": "Step-by-step guides for every product—platform setup, analytics, and integrations in one place.",
+  "description": "How to use every PharmaTools module, step by step, for pharmacists, technicians, assistants and pharmacy owners.",
   "colors": {
     "primary": "#192646",
     "light": "#E9F2FC",
     "dark": "#192646"
   },
-  "favicon": "https://pharmatools.ca/pharmatools-logo.svg",
+  "favicon": "/logo/mark.svg",
   "icons": {
     "library": "lucide"
   },
@@ -16,7 +16,13 @@
     "eyebrows": "breadcrumbs"
   },
   "contextual": {
-    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
+    "options": [
+      "copy",
+      "view",
+      "assistant",
+      "mcp",
+      "add-mcp"
+    ]
   },
   "navigation": {
     "global": {
@@ -28,57 +34,342 @@
         }
       ]
     },
-    "directory": "card",
     "dropdowns": [
       {
-        "dropdown": "General",
-        "pages": [
-          "index",
-          "getting-started-sign-up",
-          "getting-started-employees",
-          "manage-employees"
+        "dropdown": "Get started",
+        "icon": "rocket",
+        "description": "Sign up, sign in, find your way around and set up your pharmacy",
+        "groups": [
+          {
+            "group": "Welcome",
+            "pages": [
+              "index"
+            ]
+          },
+          {
+            "group": "Getting started",
+            "pages": [
+              "getting-started/sign-up",
+              "getting-started/setup",
+              "getting-started/signing-in",
+              "getting-started/finding-your-way",
+              "getting-started/dashboard",
+              "getting-started/notifications",
+              "getting-started/roles-and-permissions",
+              "getting-started/plan-and-billing",
+              "getting-started/support"
+            ]
+          },
+          {
+            "group": "Settings",
+            "pages": [
+              "settings/overview",
+              "settings/profile",
+              "settings/appearance",
+              "settings/sign-in-security",
+              "settings/manage-employees",
+              "settings/teams",
+              "settings/notifications",
+              "settings/keyboard-shortcuts",
+              "settings/import-data",
+              "settings/texting",
+              "settings/online-requests",
+              "settings/phone-line"
+            ]
+          }
         ]
       },
       {
-        "dropdown": "Central Fill Module",
-        "pages": [
-          "workflow-central-fill",
-          "workflow-dispensing",
-          "manage-connections"
+        "dropdown": "Comms and RxLink",
+        "icon": "inbox",
+        "description": "Faxes, texts, voicemail, patient requests, team chat and linked pharmacies",
+        "groups": [
+          {
+            "group": "Comms",
+            "pages": [
+              "communications/overview",
+              "communications/working-items",
+              "communications/faxes",
+              "communications/text-messages",
+              "communications/patient-portal",
+              "communications/voicemail",
+              "communications/patient-requests"
+            ]
+          },
+          {
+            "group": "RxLink",
+            "pages": [
+              "rxlink/overview",
+              "rxlink/team-chat",
+              "rxlink/pharmacies",
+              "rxlink/contacts"
+            ]
+          }
         ]
       },
       {
-        "dropdown": "Partner Portal",
-        "pages": [
-          "starting-a-port",
-          "monitoring-a-port",
-          "fax-profiles"
+        "dropdown": "Campaigns and Rx texts",
+        "icon": "megaphone",
+        "description": "Text campaigns, ready-for-pickup texts and refill reminders",
+        "groups": [
+          {
+            "group": "Campaigns",
+            "pages": [
+              "campaigns/overview",
+              "campaigns/audiences",
+              "campaigns/create-a-campaign",
+              "campaigns/campaign-results",
+              "campaigns/automations",
+              "campaigns/texting-settings-and-credits",
+              "campaigns/what-patients-see"
+            ]
+          },
+          {
+            "group": "Rx texts",
+            "pages": [
+              "rx-texts/overview",
+              "rx-texts/ready-for-pickup",
+              "rx-texts/refill-reminders",
+              "rx-texts/settings"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "To-Do and Forms",
+        "icon": "list-checks",
+        "description": "Tasks, the calendar, and patient forms",
+        "groups": [
+          {
+            "group": "To-Do and Calendar",
+            "pages": [
+              "todo/overview",
+              "todo/add-tasks",
+              "todo/task-details",
+              "todo/calendar",
+              "todo/flyout"
+            ]
+          },
+          {
+            "group": "Forms",
+            "pages": [
+              "forms/overview",
+              "forms/send-a-form",
+              "forms/patient-view",
+              "forms/after-signing",
+              "forms/templates"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "Compounding",
+        "icon": "flask-conical",
+        "description": "Compounding setup, master formulas, compounding records, logs, SOPs and training",
+        "groups": [
+          {
+            "group": "Compounding",
+            "pages": [
+              "compounding/overview"
+            ]
+          },
+          {
+            "group": "Compounding setup",
+            "pages": [
+              "compounding/profile-setup",
+              "compounding/profile-rooms",
+              "compounding/profile-whole-pharmacy",
+              "compounding/profile-methods",
+              "compounding/profile-capsules"
+            ]
+          },
+          {
+            "group": "Master formulas",
+            "pages": [
+              "compounding/mfr-list",
+              "compounding/mfr-new",
+              "compounding/mfr-formulation",
+              "compounding/mfr-unit-dose",
+              "compounding/mfr-risk",
+              "compounding/mfr-method-qc-label",
+              "compounding/mfr-sign",
+              "compounding/mfr-versions"
+            ]
+          },
+          {
+            "group": "Compounding records",
+            "pages": [
+              "compounding/records",
+              "compounding/records-making",
+              "compounding/records-approve"
+            ]
+          },
+          {
+            "group": "Compliance",
+            "pages": [
+              "compounding/logs",
+              "compounding/sops",
+              "compounding/training",
+              "compounding/incidents"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "Narcotics",
+        "icon": "shield-check",
+        "description": "Narcotic and controlled drug reconciliation",
+        "groups": [
+          {
+            "group": "Narcotics",
+            "pages": [
+              "narcotics/overview",
+              "narcotics/getting-started",
+              "narcotics/transactions",
+              "narcotics/reconciliation",
+              "narcotics/records-and-settings"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "Blister packs",
+        "icon": "pill",
+        "description": "Bill, prepare, check and hand off weekly blister packs",
+        "groups": [
+          {
+            "group": "Blister packs",
+            "pages": [
+              "blister-packs/overview",
+              "blister-packs/work-list",
+              "blister-packs/patients",
+              "blister-packs/fill-page",
+              "blister-packs/settings"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "Central Fill",
+        "icon": "package",
+        "description": "Send and fill central fill orders between pharmacies",
+        "groups": [
+          {
+            "group": "Central Fill",
+            "pages": [
+              "central-fill/overview",
+              "central-fill/sending-orders",
+              "central-fill/filling-orders",
+              "central-fill/partners",
+              "central-fill/onboarding-documents"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "PharmaTools Desktop",
+        "icon": "monitor",
+        "description": "The Windows app for faxing from any program and connecting your pharmacy software",
+        "groups": [
+          {
+            "group": "PharmaTools Desktop",
+            "pages": [
+              "desktop/overview",
+              "desktop/install-and-connect",
+              "desktop/send-faxes-from-windows",
+              "desktop/save-incoming-faxes",
+              "desktop/pharmacy-software-connection",
+              "desktop/troubleshooting"
+            ]
+          }
+        ]
+      },
+      {
+        "dropdown": "Partner portal",
+        "icon": "building-2",
+        "description": "For partners: fax profiles and moving numbers to PharmaTools",
+        "groups": [
+          {
+            "group": "Partner portal",
+            "pages": [
+              "partner-portal/overview",
+              "partner-portal/fax-profiles",
+              "partner-portal/starting-a-port",
+              "partner-portal/monitoring-a-port",
+              "partner-portal/account-settings"
+            ]
+          }
         ]
       }
     ]
   },
-  "logo": "https://pharmatools.ca/pharmatools-logo.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "/"
+  },
   "navbar": {
     "links": [
       {
-        "href": "https://pharmatools.ca/main",
+        "href": "https://pharmatools.ca",
         "label": "PharmaTools"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "Open PharmaTools",
+      "href": "https://app.pharmatools.ca"
     }
   },
-  "footer": {
-    "socials": {
-      "linkedin": "https://linkedin.com/company/yourcompany"
-    }
-  },
+  "footer": {},
   "background": {
     "color": {
       "dark": "#192646"
     }
+  },
+  "redirects": [
+    {
+      "source": "/getting-started-sign-up",
+      "destination": "/getting-started/sign-up"
+    },
+    {
+      "source": "/getting-started-employees",
+      "destination": "/getting-started/signing-in"
+    },
+    {
+      "source": "/manage-employees",
+      "destination": "/settings/manage-employees"
+    },
+    {
+      "source": "/workflow-central-fill",
+      "destination": "/central-fill/filling-orders"
+    },
+    {
+      "source": "/workflow-dispensing",
+      "destination": "/central-fill/sending-orders"
+    },
+    {
+      "source": "/manage-connections",
+      "destination": "/central-fill/partners"
+    },
+    {
+      "source": "/starting-a-port",
+      "destination": "/partner-portal/starting-a-port"
+    },
+    {
+      "source": "/monitoring-a-port",
+      "destination": "/partner-portal/monitoring-a-port"
+    },
+    {
+      "source": "/fax-profiles",
+      "destination": "/partner-portal/fax-profiles"
+    },
+    {
+      "source": "/settings/plan-and-billing",
+      "destination": "/getting-started/plan-and-billing"
+    }
+  ],
+  "search": {
+    "prompt": "Search the PharmaTools guide…"
   }
 }
